@@ -30,5 +30,4 @@
       - name: run install, build and tests
         run: |
           npm install
-          npm run build
           npx cypress run
