@@ -10,7 +10,4 @@ module.exports = defineConfig({
   },
 });
 
-Cypress.on('uncaught:exception', (err, runnable) => {
-  return false;
-});
 

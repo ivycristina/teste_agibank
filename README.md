@@ -2,12 +2,11 @@
 
 Esse projeto implementa 2 cenários automatizados do blog da agibank para Avaliação Técnica
 
-> Utilizando a stack: Javascript + Cucumber + cypress, esse projeto tem o intuito de implementar a automação dos testes para a tabela "By Search" da API http://www.omdbapi.com utilizando o parametro "s"
-=300. 
+> Utilizando a stack: Javascript + Cucumber + cypress, esse projeto tem o intuito de implementar a automação de cenários do blog "https://blog.agibank.com.br/"
 
-[![Ruby Version][ruby-image]][ruby-url]
-[![Cucumber Version][cucumber-image]][cucumber-url]
-[![HTTParty Version][httparty-image]][httparty-url]
+[![Cypress Version][cypress-image][cypress-url]]
+[![Cucumber Version][cucumber-image]][cucumber-url]]
+[![Javascript Version][javascript-image][javascript-url]]
 
 ## Arquitetura do projeto
 
@@ -21,7 +20,7 @@ Para executar os testes, faça toda a configuração do seu ambiente, e faça o 
 * para instalar as dependencias, acesse o diretório do projeto pelo seu console, e execute o comado:
 
 ```sh
-bundle install
+npm install
 ```
 * após concluir a instalação, para executar o teste, execute o comando abaixo, substituindo "@tag" para a tag do teste que você deseja executar.
 
@@ -36,9 +35,9 @@ cucumber --format html --out=report.htm
 ```
 
 
-[ruby-image]: https://img.shields.io/badge/ruby-2.6.5--1-red
-[ruby-url]: https://www.ruby-lang.org/pt/
+[javascript-image]: https://img.shields.io/badge/logo-javascript-blue?logo=javascript
+[javascript-url]: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction
+[cypress-image]: https://www.battery.com/wp-content/uploads/2021/03/Cypress_logo_Color-website.png
+[cypress-url]: https://docs.cypress.io/app/get-started/why-cypress
 [cucumber-image]: https://img.shields.io/badge/cucumber-using-brightgreen
 [cucumber-url]: https://cucumber.io/
-[httparty-image]: https://img.shields.io/badge/httparty-0.18.1-yellow
-[httparty-url]: https://rubygems.org/gems/httparty/versions/0.13.7?locale=pt-BR
