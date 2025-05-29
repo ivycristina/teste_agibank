@@ -5,7 +5,7 @@ Esse projeto implementa 2 cenários automatizados do blog da agibank para Avalia
 > Utilizando a stack: Javascript + Cucumber + cypress, esse projeto tem o intuito de implementar a automação de cenários do blog "https://blog.agibank.com.br/"
 
 [![Cypress Version][cypress-image][cypress-url]]
-[![Cucumber Version][cucumber-image]][cucumber-url]]
+[![Cucumber Version][cucumber-image][cucumber-url]]
 [![Javascript Version][javascript-image][javascript-url]]
 
 ## Arquitetura do projeto
@@ -17,15 +17,42 @@ Toda descrição e explicação sobre a arquitetura do projeto pode ser vista [a
 
 Para executar os testes, faça toda a configuração do seu ambiente, e faça o clone do projeto em sua máquina.
 
-* para instalar as dependencias, acesse o diretório do projeto pelo seu console, e execute o comado:
+* para instalar as dependencias, acesse o diretório do projeto pelo seu console, e execute os comados abaixo:
 
 ```sh
-npm install
+npm install cypress --save-dev
 ```
-* após concluir a instalação, para executar o teste, execute o comando abaixo, substituindo "@tag" para a tag do teste que você deseja executar.
+```sh
+npx cypress open
+```
+* para instalar o cypress-cucumber-preprocessor, acesse o diretório do projeto pelo seu console, e execute os comados abaixo:
 
 ```sh
-cucumber -t @suatag
+npm install cypress-cucumber-preprocessor --save-dev
+```
+
+* Dentro do arquivo cypress.config.js inclua as informações abaixo para criar os pluggins do cucumber.
+
+```sh
+const { defineConfig } = require("cypress");
+const cucumber = require("cypress-cucumber-preprocessor").default
+module.exports = defineConfig({
+  e2e: {
+    setupNodeEvents(on, config) {
+      on("file:preprocessor", cucumber())
+      return config;
+    },
+    specPattern: "cypress/e2e/step_definitions/*.feature",
+  },
+});
+
+* Instale a extensão (cucumber (gherkin) Full Support)
+
+
+* após concluir a instalação, para executar o teste, execute o comando abaixo.
+
+```sh
+npx cypress open
 ```
 
 * para gerar o report execute o comado:
