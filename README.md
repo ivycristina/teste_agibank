@@ -1,8 +1,8 @@
-# Automações de Testes API OMDB
+# Automações de Testes Web Blog Agibank
 
-Esse projeto implementa todos os fluxos de testes automatizados do Teste De API do OMDB
+Esse projeto implementa 2 cenários automatizados do blog da agibank para Avaliação Técnica
 
-> Utilizando a stack: Ruby + Cucumber + HTTParty, esse projeto tem o intuito de implementar a automação dos testes para a tabela "By Search" da API http://www.omdbapi.com utilizando o parametro "s"
+> Utilizando a stack: Javascript + Cucumber + cypress, esse projeto tem o intuito de implementar a automação dos testes para a tabela "By Search" da API http://www.omdbapi.com utilizando o parametro "s"
 =300. 
 
 [![Ruby Version][ruby-image]][ruby-url]
