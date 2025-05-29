@@ -9,5 +9,3 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/step_definitions/*.feature",
   },
 });
-
-

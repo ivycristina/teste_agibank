@@ -1,0 +1,82 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Acessar blog",
+    "line": 1,
+    "id": "acessar-blog",
+    "tags": [],
+    "uri": "acessando_blog.feature",
+    "elements": [
+      {
+        "id": "acessar-blog;validar-busca",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validar busca",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "eu acesso o blog da agibank",
+            "result": {
+              "status": "passed",
+              "duration": 4891000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "clicar na lupa e pesquisar a noticia",
+            "result": {
+              "status": "passed",
+              "duration": 5627000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "o blog exibirá os resultados encontrados com essa noticia informada",
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "acessar-blog;validar-menu-serviços",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Validar menu Serviços",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "eu acesso o blog da agibank",
+            "result": {
+              "status": "passed",
+              "duration": 3009000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "clicar no menu Serviços",
+            "result": {
+              "status": "passed",
+              "duration": 6133000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

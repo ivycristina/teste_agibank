@@ -45,22 +45,40 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/step_definitions/*.feature",
   },
 });
+```
 
 * Instale a extensão (cucumber (gherkin) Full Support)
 
 
-* após concluir a instalação, para executar o teste, execute o comando abaixo.
+* após concluir a instalação, para executar o teste, execute o comando abaixo, para rodar os testes direto no cypress sem report.
 
 ```sh
 npx cypress open
 ```
 
-* para gerar o report execute o comado:
+* para gerar o report primeiro configure:
+* rode o comando abaixo:
 
 ```sh
-cucumber --format html --out=report.htm
+npm install --save-dev multiple-cucumber-html-reporter --save-dev
 ```
 
+* inclua no arquivo ,package.json
+```sh
+"cypress-cucumber-preprocessor": {
+  "cucumberJson": {
+    "generate": true,
+    "outputFolder": "cypress/cucumber-json",
+    "filePrefix": "",
+    "fileSuffix": ".cucumber"
+  }
+}
+```
+* para rodar os testes use o comando
+
+```sh
+node cucumber-html-report.js
+```
 
 [javascript-image]: https://img.shields.io/badge/logo-javascript-blue?logo=javascript
 [javascript-url]: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction

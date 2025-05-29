@@ -18,14 +18,17 @@
 
       - name: 'UI Tests - Chrome'
         uses: cypress-io/github-action@v2
+
+      - name: using node.js
+        uses: actions/setup-node@v2
         with:
-          install-command: yarn install
-          wait-on: ${{ secrets.BASE_URL }}
-          wait-on-timeout: 120
+          node-version: 16.
           browser: chrome
           record: true
           group: 'UI - Chrome'
-          spec: cypress/integration/API/tests/OnboardPJ/*
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: run install, build and tests
+        run: |
+          npm install
+          npm run build
+          npx cypress run
