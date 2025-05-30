@@ -22,7 +22,7 @@
             "name": "eu acesso o blog da agibank",
             "result": {
               "status": "passed",
-              "duration": 4891000000
+              "duration": 5898000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "clicar na lupa e pesquisar a noticia",
             "result": {
               "status": "passed",
-              "duration": 5627000000
+              "duration": 12275000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "o blog exibirá os resultados encontrados com essa noticia informada",
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 38000000
             }
           }
         ]
@@ -62,7 +62,7 @@
             "name": "eu acesso o blog da agibank",
             "result": {
               "status": "passed",
-              "duration": 3009000000
+              "duration": 2573000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "clicar no menu Serviços",
             "result": {
               "status": "passed",
-              "duration": 6133000000
+              "duration": 2878000000
             }
           }
         ]
